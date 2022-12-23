@@ -14,7 +14,7 @@ function countCharA(string1) {
         
     }
     console.log(`The given string is : "${string1}"`);
-    console.log(`Total Count of "A" & "a" in the given string is: ${counter}\n`);
+    console.log(`Total Count of "A" & "a" in the given string is: ${counter}`);
 }
 countCharA("I AM Learning JavaScript, The Language of internet");
 countCharA("My favourite movie is LAggAn");
