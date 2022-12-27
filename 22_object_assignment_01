@@ -1,0 +1,63 @@
+console.log(`Assignment No. 1: Objects with professor example. \n`);
+
+const professor = {
+
+}
+professor.name = "Chandrashekhar B. Thombare";
+professor.age = 31,
+professor.district = "Pune",
+professor.degrees = {
+          engineering : "CSC, ",
+          masters : " Cyber Security, ",
+          phd : "Adv computing, ",
+totalDegrees : function(){
+            var sum = this.engineering+this.phd+this.masters;
+            return sum;
+        }
+}
+
+professor.certificates = {
+          First : "Hacker Rank",                        
+          Second : "Certificate in IFE course",
+          Third : "Certificate in Adv programing",
+}
+
+console.log("1] Professor object includes elements as follows:");
+console.log(professor);
+
+
+console.log("2] Adding nested Object: degrees");
+const adding = professor.degrees;
+console.log(adding);
+
+
+console.log("3] Adding nested Object: certificates");
+const add = professor.certificates;
+console.log(add);
+
+
+console.log("4] Total degrees for professor:");
+var sumOf = professor.degrees.totalDegrees();
+console.log(`Teacher degrees are total degrees are: ${sumOf}`);
+
+
+console.log("5] Adding new property in object");
+professor.mobileNo = "8850689262";
+
+console.log(professor);
+
+console.log("6] Modifying existing Property");
+professor.age = 35;
+console.log(professor);
+
+console.log("7] Delete one certificate from nested objecct");
+delete professor.certificates.Second;
+
+console.log(professor);
+
+console.log("8] Add new certificate in nested object");
+professor.certificates.Fourth = "MSCIT"
+console.log(professor);
+
+console.log("9] Log nested object Certificate on console");
+console.log(professor.certificates);

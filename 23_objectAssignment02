@@ -1,0 +1,44 @@
+console.log(`Assignment No. 2: Objects with bank example. \n`);
+
+const sbiBank = {
+    bankName : "SBI Bank",
+    location : "Masalwadi",
+    accountNo : 11123252457,
+    ifsc : 'SBIN0005242',
+    interestRate : '6.1%',
+}
+console.log("1] SBI Bank Details");
+console.log(sbiBank);
+
+
+const axisBank = {
+    bankName : "Axis Bank",
+    location : "Morgaon",
+    accountNo : 967345261738453,
+    ifsc : 'UTIB03595554',
+    interestRate : '7.40%',
+}
+console.log("2] Axis Bank Details");
+console.log(axisBank);
+
+
+const hdfcBank = {
+    bankName : "HDFC Bank",
+    location : "Baramati",
+    accountNo : 786325214524452,
+    ifsc : 'HDFC0002819',
+    interestRate : '8.40%',
+}
+console.log("3] HDFC Bank Details");
+console.log(hdfcBank);
+
+
+const yesBank = {
+    bankName : "Yes Bank",
+    location : "Someshwar Nagar",
+    accountNo : 124745587115,
+    ifsc : 'YES0477564',
+    interestRate : '8.25%',
+}
+console.log("4]  Yes Bank Details");
+console.log(yesBank);
