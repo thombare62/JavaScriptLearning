@@ -3,11 +3,21 @@ const person = {
     weight: 70,
     age: 23,
     name: "Billgates",
+    company: "Microsoft",
+    valuation: "130B $",
     speak: function(){
       console.log(`Hey I can speak English and Hindi`);
     }
   
   }
+
+  console.log(`===========For in loop=================`);
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+  }
+
+
   console.log(typeof person);
   console.log(person);
   console.log(`Accessing object properties using dot notation`);
