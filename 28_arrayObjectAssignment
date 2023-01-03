@@ -1,0 +1,38 @@
+console.log(`====Assignment: Array Object====`);
+console.log(``);
+class Bank { 
+    constructor(bankName, location,accountNo, ifscCode, interestRate){
+    this.bankName = bankName;
+    this.location = location;
+    this.accountNo = accountNo;
+    this.ifscCode = ifscCode;
+    this.interestRate = interestRate;
+    }
+}
+
+let axisBank = new Bank("Axis Bank", "Jejuri", 123456789, "AXIS00000786","6%");
+let sbiBank = new Bank("SBI Bank", "Morgaon", 1231564789, "SBIB00006192", "12.55%");
+let iciciBank = new Bank("ICICI Bank", "Masalwadi", 14678656789, "ICIC00004444", "16%");
+let kotakBank = new Bank("Kotak Bank", "Baramati", 7845632789, "KOTK00000808", "7.9%");
+let hdfcBank = new Bank("HDFC Bank", "Baramati", 3255467754, "HDFC00007508", "10%");
+let punjabBank = new Bank("Punjab Bank", "Baramati", 75486321456, "PUNJ00004158", "7.75%");
+
+console.log(`C] Bank name & its location`);
+const array = [axisBank,sbiBank,iciciBank,kotakBank,hdfcBank,punjabBank];
+ for (const iterator of array) {
+ console.log(`Bank Name is: ${iterator.bankName} & its Location is: ${iterator.location}`);
+ }
+ console.log(``);
+console.log(`D] Finding object with name "kotak bank" using for of loop`);
+for (const iterator of array) {
+    if(iterator === kotakBank){
+        console.log(iterator);
+    }
+}
+console.log(``);
+
+console.log(`E] All deatils of class Bank`);
+ for (let index = 0; index < array.length; index++) {
+     const element = array[index];
+    console.log(element);
+}
