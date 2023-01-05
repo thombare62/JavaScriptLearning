@@ -1,7 +1,4 @@
 
-
-
-
 const mapOfNumbers = new Map(); // Creating an Map
 mapOfNumbers.set(11, "Eleven"); // Adding element in key value pair
 mapOfNumbers.set(22, "Twenty two");
